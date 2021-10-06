@@ -23,18 +23,18 @@ function App() {
                 <TopMenu isAuthenticated={isAuthenticated} toggleIsAuthenticated={toggleIsAuthenticated}/>
                 <Switch>
                     <Route exact path="/">
-                        <HomePage />
+                        <HomePage/>
                     </Route>
                     <Route path="/blogposts">
-                        {isAuthenticated ? <Blogposts />: <Redirect to="/"/>}
-
+                        {isAuthenticated ? <Blogposts/> : <Redirect to="/"/>}
                     </Route>
                     <Route path="/login">
                         <LoginPage isAuthenticated={isAuthenticated} toggleIsAuthenticated={toggleIsAuthenticated}/>
                     </Route>
                     <Route path="/blog/:id">
-                        {isAuthenticated ? <BlogpostPage isAuthenticated={isAuthenticated}  /> : <Redirect to="/"/> }
-
+                        {isAuthenticated ?
+                            <BlogpostPage isAuthenticated={isAuthenticated}/>
+                            : <Redirect to="/"/>}
                     </Route>
                 </Switch>
             </Router>

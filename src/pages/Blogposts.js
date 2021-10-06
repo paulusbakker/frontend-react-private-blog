@@ -5,9 +5,6 @@ import {Link} from "react-router-dom";
 
 function BlogPosts() {
 
-    console.log(posts);
-
-
     return (
         <>
             <div className="page-container">

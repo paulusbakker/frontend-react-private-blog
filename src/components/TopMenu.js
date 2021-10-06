@@ -6,7 +6,6 @@ function TopMenu({isAuthenticated, toggleIsAuthenticated}) {
     return (
         <nav>
             <div className="nav-container">
-
                 <ul className="ul-nav-container">
                     <li>
                         <Link to="/" exact activeClassName="active-link">Home</Link>
@@ -19,10 +18,9 @@ function TopMenu({isAuthenticated, toggleIsAuthenticated}) {
 
                     <li>
                         {isAuthenticated ?
-                            <button onClick={()=>toggleIsAuthenticated(!isAuthenticated)}>Uitloggen</button> :
-                            <Link to="/login" activeClassName="active-link">Login</Link>
+                            <button onClick={() => toggleIsAuthenticated(!isAuthenticated)}>Uitloggen</button> :
+                            <Link to="/login" >Login</Link>
                         }
-
                     </li>
                 </ul>
             </div>

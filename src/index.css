@@ -12,12 +12,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-
 p {
     font-family: Arial, sans-serif;
     margin: 16px 0;
@@ -76,9 +70,11 @@ ul {
     padding: 30px;
 }
 
-/*.active-link {*/
-/*  border-bottom: 2px solid white;*/
-/*}*/
 li {
     color: black
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
